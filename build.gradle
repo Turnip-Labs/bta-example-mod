@@ -1,0 +1,72 @@
+plugins {
+    id 'babric-loom' version '0.12-SNAPSHOT'
+    id 'java'
+}
+
+group = project.mod_group
+archivesBaseName = project.mod_name
+version = project.mod_version
+
+loom {
+    gluedMinecraftJar()
+    noIntermediateMappings()
+    customMinecraftManifest.set("https://github.com/azurelmao/bta-manifest-repo/releases/download/v1.7.6.2_02/1.7.6.2_02.json")
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        name = 'Babric'
+        url = 'https://maven.glass-launcher.net/babric'
+    }
+    maven {
+        name = 'Fabric'
+        url = 'https://maven.fabricmc.net/'
+    }
+    ivy {
+        url = "https://github.com/Better-than-Adventure"
+        patternLayout {
+            artifact("[organisation]/releases/download/v[revision]/[module].jar")
+            m2compatible = true
+        }
+        metadataSources { artifact() }
+    }
+}
+
+dependencies {
+    minecraft "bta-download-repo:bta:${project.bta_version}"
+    mappings loom.layered() {}
+
+    modRuntimeOnly files("libs/minecraft-client-base.jar") // only used to fix the Client run configuration
+    modImplementation "babric:fabric-loader:${project.loader_version}"
+
+    modImplementation "org.slf4j:slf4j-api:1.8.0-beta4"
+    modImplementation "org.apache.logging.log4j:log4j-slf4j18-impl:2.16.0"
+
+    modImplementation("org.apache.commons:commons-lang3:3.12.0")
+    include("org.apache.commons:commons-lang3:3.12.0")
+}
+
+java {
+	sourceCompatibility = JavaVersion.VERSION_1_8
+	targetCompatibility = JavaVersion.VERSION_1_8
+    withSourcesJar()
+}
+
+tasks.withType(JavaCompile) {
+	options.release.set 8
+}
+
+jar {
+    from("LICENSE") {
+        rename { "${it}_${archivesBaseName}" }
+    }
+}
+
+processResources {
+    inputs.property "version", version
+
+    filesMatching("fabric.mod.json") {
+        expand "version": version
+    }
+}
