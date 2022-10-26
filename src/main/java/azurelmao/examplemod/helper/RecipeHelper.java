@@ -1,5 +1,6 @@
-package azurelmao.examplemod;
+package azurelmao.examplemod.helper;
 
+import azurelmao.examplemod.ExampleMod;
 import azurelmao.examplemod.mixin.helper.CraftingManagerInterface;
 import azurelmao.examplemod.mixin.helper.RecipesBlastFurnaceInterface;
 import azurelmao.examplemod.mixin.helper.RecipesFurnaceInterface;

@@ -1,4 +1,4 @@
-package azurelmao.examplemod;
+package azurelmao.examplemod.helper;
 
 import azurelmao.examplemod.mixin.helper.DimensionInterface;
 import net.minecraft.src.Block;

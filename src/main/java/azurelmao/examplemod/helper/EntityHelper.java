@@ -1,4 +1,4 @@
-package azurelmao.examplemod;
+package azurelmao.examplemod.helper;
 
 import azurelmao.examplemod.mixin.helper.EntityListInterface;
 import azurelmao.examplemod.mixin.helper.RenderManagerInterface;
