@@ -4,17 +4,6 @@
     "package": "azurelmao.examplemod.mixin",
     "compatibilityLevel": "JAVA_8",
     "mixins": [
-        "fix.MinecraftServerMixin",
-        "helper.BlockInterface",
-        "helper.CraftingManagerInterface",
-        "helper.DimensionInterface",
-        "helper.EntityListInterface",
-        "helper.RecipesBlastFurnaceInterface",
-        "helper.RecipesFurnaceInterface",
-        "helper.RenderGlobalMixin",
-        "helper.RenderManagerInterface",
-        "helper.RenderPlayerInterface",
-        "helper.TileEntityInterface"
     ],
     "client": [
     ],
