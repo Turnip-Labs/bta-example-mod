@@ -45,6 +45,8 @@ dependencies {
 
 	modImplementation("org.apache.commons:commons-lang3:3.12.0")
 	include("org.apache.commons:commons-lang3:3.12.0")
+
+	modImplementation files("libs/halplibe-1.0.0.jar")
 }
 
 java {
