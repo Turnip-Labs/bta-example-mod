@@ -1,6 +1,6 @@
-# BTA Babric Minimal Example Mod
+# BTA Babric Minimal Mod
 
-A babric mod template for quickly making new mods.
+Babric example mod, but without the examples.
 
 ## Prerequisites
 - JDK for Java 17 ([Eclipse Temurin](https://adoptium.net/temurin/releases/) recommended)
@@ -11,7 +11,7 @@ A babric mod template for quickly making new mods.
 
 1. Download or clone this repository and put it somewhere.
 ```
-git clone https://github.com/azurelmao/bta-babric-minimal-example-mod.git
+git clone https://github.com/azurelmao/bta-minimal-mod.git
 ```
 
 2. Import the project in IntelliJ IDEA, close it and open it again.
