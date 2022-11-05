@@ -1,4 +1,4 @@
-package azurelmao.examplemod;
+package turniplabs.examplemod;
 
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;

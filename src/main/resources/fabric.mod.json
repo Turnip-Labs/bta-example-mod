@@ -6,7 +6,7 @@
   "name": "Example Mod",
   "description": "This mod aims to help new BTA modders.",
   "authors": [
-    "azurelmao"
+    "Turnip Labs"
   ],
   "contact": {
     "homepage": "",
@@ -18,7 +18,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "azurelmao.examplemod.ExampleMod"
+        "turniplabs.examplemod.ExampleMod"
     ]
   },
   "mixins": [

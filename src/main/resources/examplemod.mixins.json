@@ -1,7 +1,7 @@
 {
     "required": true,
     "minVersion": "0.8",
-    "package": "azurelmao.examplemod.mixin",
+    "package": "turniplabs.examplemod.mixin",
     "compatibilityLevel": "JAVA_8",
     "mixins": [
     ],
