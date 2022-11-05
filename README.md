@@ -11,7 +11,7 @@ Babric example mod, but without the examples.
 
 1. Download or clone this repository and put it somewhere.
 ```
-git clone https://github.com/azurelmao/bta-minimal-mod.git
+git clone https://github.com/Turnip-Labs/bta-minimal-mod.git
 ```
 
 2. Import the project in IntelliJ IDEA, close it and open it again.
