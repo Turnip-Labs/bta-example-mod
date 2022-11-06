@@ -34,7 +34,7 @@ repositories {
 	ivy {
 		url = "https://github.com/Turnip-Labs"
 		patternLayout {
-			artifact "[organisation]/releases/download/v[revision]/[module].jar"
+			artifact "[organisation]/releases/download/v[revision]/[module]-[revision].jar"
 			m2compatible = true
 		}
 		metadataSources { artifact() }
@@ -45,12 +45,12 @@ dependencies {
 	minecraft "bta-download-repo:bta:${project.bta_version}"
 	mappings loom.layered() {}
 
-	modRuntimeOnly files("libs/minecraft-client-base.jar") // only used to fix the Client run configuration
+	modRuntimeOnly files("libs/minecraft.jar") // only used to fix the Client run configuration
 	modImplementation "babric:fabric-loader:${project.loader_version}"
 
 	// Helper library
-	modImplementation "bta-mod-repo:halplibe:${project.halplibe_version}"
-	include "bta-mod-repo:halplibe:${project.halplibe_version}"
+	modImplementation "bta-halplibe:halplibe:${project.halplibe_version}"
+	include "bta-halplibe:halplibe:${project.halplibe_version}"
 
 	modImplementation "org.slf4j:slf4j-api:1.8.0-beta4"
 	modImplementation "org.apache.logging.log4j:log4j-slf4j18-impl:2.16.0"
