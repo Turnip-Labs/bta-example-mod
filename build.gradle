@@ -39,13 +39,21 @@ repositories {
 		}
 		metadataSources { artifact() }
 	}
+	ivy {
+        url = "https://piston-data.mojang.com"
+        patternLayout {
+            artifact "v1/[organisation]/[revision]/[module].jar"
+            m2compatible = true
+        }
+        metadataSources { artifact() }
+    }
 }
 
 dependencies {
 	minecraft "bta-download-repo:bta:${project.bta_version}"
 	mappings loom.layered() {}
 
-	modRuntimeOnly files("libs/minecraft.jar") // only used to fix the Client run configuration
+	modRuntimeOnly "objects:client:43db9b498cb67058d2e12d394e6507722e71bb45" // https://piston-data.mojang.com/v1/objects/43db9b498cb67058d2e12d394e6507722e71bb45/client.jar
 	modImplementation "babric:fabric-loader:${project.loader_version}"
 
 	// Helper library
