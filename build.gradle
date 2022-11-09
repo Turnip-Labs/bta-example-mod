@@ -40,13 +40,13 @@ repositories {
 		metadataSources { artifact() }
 	}
 	ivy {
-        url = "https://piston-data.mojang.com"
-        patternLayout {
-            artifact "v1/[organisation]/[revision]/[module].jar"
-            m2compatible = true
-        }
-        metadataSources { artifact() }
-    }
+		url = "https://piston-data.mojang.com"
+		patternLayout {
+			artifact "v1/[organisation]/[revision]/[module].jar"
+			m2compatible = true
+		}
+		metadataSources { artifact() }
+	}
 }
 
 dependencies {
