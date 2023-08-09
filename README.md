@@ -1,6 +1,6 @@
-# Minimal Mod
+# Example Mod
 
-Babric example mod, without the examples.
+Template for making Babric mods for BTA!
 
 ## Prerequisites
 - JDK for Java 17 ([Eclipse Temurin](https://adoptium.net/temurin/releases/) recommended)
@@ -11,7 +11,7 @@ Babric example mod, without the examples.
 
 1. Download or clone this repository and put it somewhere.
 ```
-git clone https://github.com/Turnip-Labs/bta-minimal-mod.git
+git clone https://github.com/Turnip-Labs/bta-example-mod.git
 ```
 
 2. Import the project in IntelliJ IDEA, close it and open it again.
