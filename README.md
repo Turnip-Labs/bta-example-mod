@@ -23,7 +23,7 @@ git clone https://github.com/Turnip-Labs/bta-example-mod.git
 
 
 4. Open `File > Settings` and head to `Build, Execution, Development > Build Tools > Gradle`  
-   Change `Build and run using` and `Run tests using` to `IntelliJ IDEA`
+   Make sure `Build and run using` and `Run tests using` is set to `Gradle`
 
 
 5. Open `File > Project Structure`, select `Project` and set `Compiler output` to your project's path/out.
