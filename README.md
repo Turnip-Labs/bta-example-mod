@@ -2,12 +2,15 @@
 
 Template for making Babric mods for BTA!
 
+**Note: *DO NOT fork this repository unless you want to contribute!***
+
 ## Prerequisites
 - JDK for Java 17 ([Eclipse Temurin](https://adoptium.net/temurin/releases/) recommended)
 - IntelliJ IDEA
 - Minecraft Development plugin (Optional, but highly recommended)
 
 ## Setup instructions
+   
 
 1. Click the `Use this template` button on this repo's page above. Choose `Create a new respository`, you will be redirected to a new page. Enter your repo's name and description, and hit `Create repository`.  
    To get your project, open IntelliJ IDEA and click `Get from VCS`. Select `Repository URL` and enter your repo's url
