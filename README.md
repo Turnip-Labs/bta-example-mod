@@ -25,9 +25,6 @@ git clone https://github.com/Turnip-Labs/bta-example-mod.git
 4. Open `File > Settings` and head to `Build, Execution, Development > Build Tools > Gradle`  
    Make sure `Build and run using` and `Run tests using` is set to `Gradle`
 
+5. **Make sure your Client and Server run configurations have `-Dfabric.gameVersion=1.7.7.0` in `VM options`!**
 
-5. Open `File > Project Structure`, select `Project` and set `Compiler output` to your project's path/out.
-
-6. **Make sure your Client and Server run configurations have `-Dfabric.gameVersion=1.7.7.0` in `VM options`!**
-
-7. Done! Now all that's left is to change every mention of `examplemod` to your own mod id. Happy modding!
+6. Done! Now, all that's left is to change every mention of `examplemod` and `turniplabs` to your own mod id and mod group, respectively. Happy modding!
