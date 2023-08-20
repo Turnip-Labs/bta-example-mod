@@ -10,7 +10,7 @@ Template for making Babric mods for BTA!
 ## Setup instructions
 
 1. Click the `Use this template` button on this repo's page above. Choose `Create a new respository`, you will be redirected to a new page. Enter your repo's name and description, and hit `Create repository`.  
-   To get your project, open IntelliJ and click `Get from VCS`. Select `Repository URL` and enter your repo's url
+   To get your project, open IntelliJ IDEA and click `Get from VCS`. Select `Repository URL` and enter your repo's url
 
 2. After the project has finished importing, close it and open it again.  
    If that does not work, open the right sidebar with `Gradle` on it, open `Tasks` > `fabric` and run `ideaSyncTask`.
