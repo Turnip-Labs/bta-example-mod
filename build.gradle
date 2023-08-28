@@ -43,6 +43,14 @@ repositories {
 	ivy {
 		url = "https://github.com/Turnip-Labs"
 		patternLayout {
+			artifact "[organisation]/releases/download/[revision]/[module]-[revision].jar"
+			m2compatible = true
+		}
+		metadataSources { artifact() }
+	}
+	ivy {
+		url = "https://github.com/Turnip-Labs"
+		patternLayout {
 			artifact "[organisation]/releases/download/[revision]/[module]-bta-[revision].jar"
 			m2compatible = true
 		}
