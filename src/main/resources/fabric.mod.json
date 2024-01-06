@@ -18,9 +18,18 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-        "turniplabs.examplemod.ExampleMod"
-    ]
-  },
+			"turniplabs.examplemod.ExampleMod"
+    ],
+		"beforeGameStart": [
+			"turniplabs.examplemod.ExampleMod"
+		],
+		"afterGameStart": [
+			"turniplabs.examplemod.ExampleMod"
+		],
+		"recipesReady": [
+			"turniplabs.examplemod.ExampleMod"
+		]
+	},
   "mixins": [
       "examplemod.mixins.json"
   ],
