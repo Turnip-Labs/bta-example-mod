@@ -6,7 +6,7 @@ Template for making Babric mods for BTA!
 
 ## Prerequisites
 - JDK for Java 17 ([Eclipse Temurin](https://adoptium.net/temurin/releases/) recommended)
-- [Intellij IDEA](https://www.jetbrains.com/idea/download/) (Scroll down for the community version )
+- [Intellij IDEA](https://www.jetbrains.com/idea/download/) (Scroll down for the community edition)
 - Minecraft Development plugin (Optional, but highly recommended)
 
 ## Setup instructions
