@@ -13,6 +13,7 @@
     "sources": ""
   },
 
+	"icon": "icon.png",
   "license": "CC0-1.0",
 
   "environment": "*",
