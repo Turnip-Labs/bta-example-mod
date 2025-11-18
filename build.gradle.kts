@@ -35,6 +35,7 @@ val gsonVersion = providers.gradleProperty("gson_version")
 val commonsLang3Version = providers.gradleProperty("commons_lang3_version")
 
 val javaVersion = providers.gradleProperty("java_version")
+val gradleJavaVersion = providers.gradleProperty("gradle_java_version")
 
 group = modGroup.get()
 base.archivesName = modName.get()
@@ -117,6 +118,10 @@ tasks {
 		sourceCompatibility = javaVersion.get()
 		targetCompatibility = javaVersion.get()
 		if (javaVersion.get().toInt() > 8) options.release = javaVersion.get().toInt()
+	}
+	named<UpdateDaemonJvm>("updateDaemonJvm") {
+		languageVersion = JavaLanguageVersion.of(gradleJavaVersion.get().toInt())
+		vendor = JvmVendorSpec.ADOPTIUM
 	}
 	withType<JavaExec>().configureEach { defaultCharacterEncoding = "UTF-8" }
 	withType<Javadoc>().configureEach { options.encoding = "UTF-8" }
