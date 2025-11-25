@@ -119,7 +119,7 @@ tasks {
 	processResources {
 		val stringModVersion = modVersion.get()
 		val stringLoaderVersion = libs.versions.loader.get()
-		val stringJavaVersion = javaVersion.get()
+		val stringJavaVersion = libs.versions.java.get()
 		val stringHalplibeVersion = libs.versions.halplibe.get()
 		val stringModMenuVersion = libs.versions.modMenu.get()
 		inputs.property("modVersion", stringModVersion)
