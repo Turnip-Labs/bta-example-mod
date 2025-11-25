@@ -49,7 +49,6 @@ loom {
 repositories {
     mavenCentral()
 	maven("https://jitpack.io")
-    maven("https://maven.glass-launcher.net/babric") { name = "Babric" }
     maven("https://maven.fabricmc.net/") { name = "Fabric" }
     maven("https://maven.thesignalumproject.net/infrastructure") { name = "SignalumMavenInfrastructure" }
     maven("https://maven.thesignalumproject.net/releases") { name = "SignalumMavenReleases" }

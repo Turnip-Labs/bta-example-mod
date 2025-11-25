@@ -5,7 +5,6 @@ pluginManagement {
 		gradlePluginPortal()
 		maven("https://maven.fabricmc.net/") { name = "Fabric" }
 		maven("https://jitpack.io") { name = "Jitpack" }
-		maven("https://maven.glass-launcher.net/babric") { name = "Babric" }
 		maven("https://maven.thesignalumproject.net/infrastructure") { name = "SignalumMavenInfrastructure" }
 	}
 	val foojayResolverVersion = providers.gradleProperty("foojay_resolver_version")
