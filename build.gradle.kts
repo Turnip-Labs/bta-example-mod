@@ -11,8 +11,8 @@ val modName = providers.gradleProperty("mod_name")
 
 val javaVersion = libs.versions.java.map { it.toInt() }
 
+base.archivesName = modName
 group = modGroup.get()
-base.archivesName = modName.get()
 version = modVersion.get()
 loom {
     noIntermediateMappings()
