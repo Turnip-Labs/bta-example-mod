@@ -1,8 +1,8 @@
 [versions]
 ##########################################################################
 # Plugins
-# Check this on https://maven.thesignalumproject.net/#/infrastructure/fabric-loom/fabric-loom.gradle.plugin/
-loom = "1.13.0-bta"
+# Check this on https://github.com/FabricMC/fabric-loom/releases/latest/
+loom = "1.14-SNAPSHOT"
 # Check this on https://plugins.gradle.org/plugin/com.smushytaco.lwjgl3/
 lwjglPlugin = "1.0.0"
 ##########################################################################
@@ -18,11 +18,11 @@ bta = "7.3_04"
 # Options are release, prerelease, nightly, and misc.
 btaChannel = "release"
 # Check this on https://maven.thesignalumproject.net/#/infrastructure/net/fabricmc/fabric-loader/
-loader = "0.17.3-bta.8"
+loader = "0.18.1-bta.9"
 # Check this on https://github.com/Turnip-Labs/ModMenu/releases/latest/
-modMenu = "3.0.0"
+modMenu = "4.0.0"
 # Check this on https://github.com/Turnip-Labs/bta-halplibe/releases/latest/
-halplibe = "5.3.1"
+halplibe = "5.3.2"
 # Check this on https://github.com/Better-than-Adventure/legacy-lwjgl3/releases/latest/
 legacyLwjgl = "1.0.6"
 ##########################################################################
@@ -54,7 +54,9 @@ log4j-api = { group = "org.apache.logging.log4j", name = "log4j-api", version.re
 log4j-api12 = { group = "org.apache.logging.log4j", name = "log4j-1.2-api", version.ref = "log4j" }
 gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
 commonsLang3 = { group = "org.apache.commons", name = "commons-lang3", version.ref = "commonsLang3" }
+# https://piston-data.mojang.com/v1/objects/43db9b498cb67058d2e12d394e6507722e71bb45/client.jar
+clientJar = { group = "objects", name = "client", version = "43db9b498cb67058d2e12d394e6507722e71bb45" }
 
 [plugins]
-loom = { id = "fabric-loom", version.ref = "loom" }
+loom = { id = "net.fabricmc.fabric-loom", version.ref = "loom" }
 lwjgl = { id = "com.smushytaco.lwjgl3", version.ref = "lwjglPlugin" }

@@ -1,4 +1,3 @@
-@file:Suppress("UnstableApiUsage")
 import com.smushytaco.lwjgl_gradle.Preset
 plugins {
 	alias(libs.plugins.loom)
@@ -15,7 +14,6 @@ base.archivesName = modName
 group = modGroup.get()
 version = modVersion.get()
 loom {
-    noIntermediateMappings()
     customMinecraftMetadata.set("https://downloads.betterthanadventure.net/bta-client/${libs.versions.btaChannel.get()}/v${libs.versions.bta.get()}/manifest.json")
 }
 repositories {
@@ -47,15 +45,13 @@ lwjgl {
 }
 dependencies {
     minecraft("::${libs.versions.bta.get()}")
-    mappings(loom.layered {})
 
-	// https://piston-data.mojang.com/v1/objects/43db9b498cb67058d2e12d394e6507722e71bb45/client.jar
-    modRuntimeOnly("objects:client:43db9b498cb67058d2e12d394e6507722e71bb45")
-    // If you do not need Halplibe you can comment out or delete this line.
-    modImplementation(libs.loader)
-    modImplementation(libs.halplibe)
-	modImplementation(libs.modMenu)
-	modImplementation(libs.legacyLwjgl)
+	runtimeOnly(libs.clientJar)
+	implementation(libs.loader)
+	// If you do not need Halplibe you can comment out or delete this line.
+	implementation(libs.halplibe)
+	implementation(libs.modMenu)
+	implementation(libs.legacyLwjgl)
 
 	implementation(libs.slf4jApi)
 	implementation(libs.guava)
