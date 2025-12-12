@@ -22,7 +22,7 @@ loader = "0.18.1-bta.9"
 # Check this on https://github.com/Turnip-Labs/ModMenu/releases/latest/
 modMenu = "4.0.0"
 # Check this on https://github.com/Turnip-Labs/bta-halplibe/releases/latest/
-halplibe = "5.3.2"
+halplibe = "5.3.3"
 # Check this on https://github.com/Better-than-Adventure/legacy-lwjgl3/releases/latest/
 legacyLwjgl = "1.0.6"
 ##########################################################################
