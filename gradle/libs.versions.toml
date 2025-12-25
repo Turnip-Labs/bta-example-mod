@@ -18,7 +18,7 @@ bta = "7.3_04"
 # Options are release, prerelease, nightly, and misc.
 btaChannel = "release"
 # Check this on https://maven.thesignalumproject.net/#/infrastructure/net/fabricmc/fabric-loader/
-loader = "0.18.1-bta.9"
+loader = "0.18.4-bta.10"
 # Check this on https://github.com/Turnip-Labs/ModMenu/releases/latest/
 modMenu = "4.0.0"
 # Check this on https://github.com/Turnip-Labs/bta-halplibe/releases/latest/
