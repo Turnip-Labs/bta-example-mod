@@ -1,4 +1,4 @@
-val modName = providers.gradleProperty("mod_name")
+val modName: Provider<String> = providers.gradleProperty("mod_name")
 rootProject.name = modName.get()
 pluginManagement {
 	fun isRepoHealthy(url: String): Boolean {
