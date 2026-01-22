@@ -2,7 +2,7 @@
 ##########################################################################
 # Plugins
 # Check this on https://github.com/FabricMC/fabric-loom/releases/latest/
-loom = "1.14-SNAPSHOT"
+loom = "1.15-SNAPSHOT"
 # Check this on https://plugins.gradle.org/plugin/com.smushytaco.lwjgl3/
 lwjglPlugin = "1.0.1"
 ##########################################################################
