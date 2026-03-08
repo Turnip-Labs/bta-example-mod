@@ -4,11 +4,11 @@ plugins {
 	alias(libs.plugins.lwjgl)
     java
 }
-val modVersion = providers.gradleProperty("mod_version")
-val modGroup = providers.gradleProperty("mod_group")
-val modName = providers.gradleProperty("mod_name")
+val modVersion: Provider<String> = providers.gradleProperty("mod_version")
+val modGroup: Provider<String> = providers.gradleProperty("mod_group")
+val modName: Provider<String> = providers.gradleProperty("mod_name")
 
-val javaVersion = libs.versions.java.map { it.toInt() }
+val javaVersion: Provider<Int> = libs.versions.java.map { it.toInt() }
 
 base.archivesName = modName
 group = modGroup.get()

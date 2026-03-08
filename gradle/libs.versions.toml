@@ -2,9 +2,9 @@
 ##########################################################################
 # Plugins
 # Check this on https://github.com/FabricMC/fabric-loom/releases/latest/
-loom = "1.14-SNAPSHOT"
+loom = "1.15-SNAPSHOT"
 # Check this on https://plugins.gradle.org/plugin/com.smushytaco.lwjgl3/
-lwjglPlugin = "1.0.0"
+lwjglPlugin = "1.0.2"
 ##########################################################################
 # Java Configuration
 # The Java version the JDK will be for compiling and running code.
@@ -18,7 +18,7 @@ bta = "7.3_04"
 # Options are release, prerelease, nightly, and misc.
 btaChannel = "release"
 # Check this on https://maven.thesignalumproject.net/#/infrastructure/net/fabricmc/fabric-loader/
-loader = "0.18.1-bta.9"
+loader = "0.18.4-bta.10"
 # Check this on https://github.com/Turnip-Labs/ModMenu/releases/latest/
 modMenu = "4.0.0"
 # Check this on https://github.com/Turnip-Labs/bta-halplibe/releases/latest/
