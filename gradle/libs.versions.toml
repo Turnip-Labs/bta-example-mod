@@ -22,7 +22,7 @@ loader = "0.18.1-bta.9"
 # Check this on https://github.com/Turnip-Labs/ModMenu/releases/latest/
 modMenu = "4.0.0"
 # Check this on https://github.com/Turnip-Labs/bta-halplibe/releases/latest/
-halplibe = "5.3.2"
+halplibe = "5.4.0"
 # Check this on https://github.com/Better-than-Adventure/legacy-lwjgl3/releases/latest/
 legacyLwjgl = "1.0.6"
 ##########################################################################
@@ -45,7 +45,7 @@ lwjgl = "3.3.3"
 loader = { group = "net.fabricmc", name = "fabric-loader", version.ref = "loader" }
 halplibe = { group = "turniplabs", name = "halplibe", version.ref = "halplibe" }
 modMenu = { group = "turniplabs", name = "modmenu-bta", version.ref = "modMenu" }
-legacyLwjgl = { group = "com.github.Better-than-Adventure", name = "legacy-lwjgl3", version.ref = "legacyLwjgl" }
+legacyLwjgl = { group = "legacy-lwjgl3", name = "legacy-lwjgl3", version.ref = "legacyLwjgl" }
 slf4jApi = { group = "org.slf4j", name = "slf4j-api", version.ref = "slf4jApi" }
 guava = { group = "com.google.guava", name = "guava", version.ref = "guava" }
 log4j-slf4j2-impl = { group = "org.apache.logging.log4j", name = "log4j-slf4j2-impl", version.ref = "log4j" }

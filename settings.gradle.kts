@@ -45,7 +45,6 @@ pluginManagement {
 				)
 			)
 		) { name = "Fabric" }
-		maven("https://jitpack.io") { name = "Jitpack" }
 		maven("https://maven.thesignalumproject.net/infrastructure") { name = "SignalumMavenInfrastructure" }
 		mavenCentral()
 		gradlePluginPortal()
