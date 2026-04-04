@@ -20,9 +20,9 @@ btaChannel = "release"
 # Check this on https://maven.thesignalumproject.net/#/infrastructure/net/fabricmc/fabric-loader/
 loader = "0.18.4-bta.10"
 # Check this on https://github.com/Turnip-Labs/ModMenu/releases/latest/
-modMenu = "4.0.0"
+modMenu = "4.0.1"
 # Check this on https://github.com/Turnip-Labs/bta-halplibe/releases/latest/
-halplibe = "5.4.0"
+halplibe = "5.4.1"
 # Check this on https://maven.thesignalumproject.net/#/infrastructure/com/github/Better-than-Adventure/legacy-lwjgl3/
 legacyLwjgl = "1.0.6"
 ##########################################################################
