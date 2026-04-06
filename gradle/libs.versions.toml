@@ -8,13 +8,13 @@ lwjglPlugin = "1.0.2"
 ##########################################################################
 # Java Configuration
 # The Java version the JDK will be for compiling and running code.
-java = "8"
+java = "17"
 # The Java version the JDK will be for running Gradle.
 gradleJava = "21"
 ##########################################################################
 # Mod Dependencies
 # Check this on https://downloads.betterthanadventure.net/bta-client/
-bta = "2026-04-03"
+bta = "2026-04-06"
 # Options are release, prerelease, nightly, and misc.
 btaChannel = "nightly"
 # Check this on https://maven.thesignalumproject.net/#/infrastructure/net/fabricmc/fabric-loader/
