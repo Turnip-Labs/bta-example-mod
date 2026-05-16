@@ -49,7 +49,7 @@ dependencies {
 	runtimeOnly(libs.clientJar)
 	implementation(libs.loader)
 	// If you do not need Halplibe you can comment out or delete this line.
-	//implementation(libs.halplibe)
+	implementation(libs.halplibe)
 	implementation(libs.modMenu)
 	implementation(libs.legacyLwjgl)
 
