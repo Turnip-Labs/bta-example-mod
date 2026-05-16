@@ -14,15 +14,15 @@ gradleJava = "21"
 ##########################################################################
 # Mod Dependencies
 # Check this on https://downloads.betterthanadventure.net/bta-client/
-bta = "2026-05-14"
+bta = "v8.0-pre1"
 # Options are release, prerelease, nightly, and misc.
-btaChannel = "nightly"
+btaChannel = "prerelease"
 # Check this on https://maven.thesignalumproject.net/#/infrastructure/net/fabricmc/fabric-loader/
 loader = "0.18.4-bta.11"
 # Check this on https://github.com/Turnip-Labs/ModMenu/releases/latest/
-modMenu = "5.0.0+nightly.2026-05-14"
+modMenu = "5.0.0"
 # Check this on https://github.com/Turnip-Labs/bta-halplibe/releases/latest/
-halplibe = "6.0.0+nightly.2026-05-14"
+halplibe = "6.0.0+"
 # Check this on https://github.com/Better-than-Adventure/legacy-lwjgl3/releases/latest/
 legacyLwjgl = "1.0.6"
 ##########################################################################
