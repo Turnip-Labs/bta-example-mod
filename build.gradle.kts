@@ -31,7 +31,7 @@ val lwjglNatives = Pair(
 	}
 }
 
-val modVersion: Provider<String> = providers.gradleProperty("mod_version")
+val modVersion = "${providers.gradleProperty("mod_version").get()}+${libs.versions.bta.get()}"
 val modGroup: Provider<String> = providers.gradleProperty("mod_group")
 val modName: Provider<String> = providers.gradleProperty("mod_name")
 
@@ -39,9 +39,10 @@ val javaVersion: Provider<Int> = libs.versions.java.map { it.toInt() }
 
 base.archivesName = modName
 group = modGroup.get()
-version = modVersion.get()
+version = modVersion
 loom {
-    customMinecraftMetadata.set("https://downloads.betterthanadventure.net/bta-client/${libs.versions.btaChannel.get()}/${libs.versions.bta.get()}/manifest.json")
+	val btaVersion = "${if (libs.versions.btaChannel.get() == "nightly") "" else "v"}${libs.versions.bta.get()}"
+    customMinecraftMetadata.set("https://downloads.betterthanadventure.net/bta-client/${libs.versions.btaChannel.get()}/$btaVersion/manifest.json")
 }
 repositories {
     mavenCentral()
@@ -130,12 +131,16 @@ tasks {
 	}
 	processResources {
 		val resourceMap = mapOf(
-			"version" to modVersion.get(),
+			"version" to modVersion,
 			"fabricloader" to libs.versions.loader.get(),
 			"halplibe" to libs.versions.halplibe.get(),
 			"java" to libs.versions.java.get(),
 			"modmenu" to libs.versions.modMenu.get()
 		)
+		// This is needed for gradle to recognize changes
+		// made to expanded files
+		inputs.properties(resourceMap)
+
 		duplicatesStrategy = DuplicatesStrategy.INCLUDE
 		with(copySpec {
 			from("src/main/resources/") {
