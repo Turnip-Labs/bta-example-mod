@@ -14,7 +14,7 @@ public class ExampleMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		CommonEvents.BEFORE_GAME_START.listen(Key.of(MOD_ID), this::beforeGameStart);
-		CommonEvents.AFTER_GAME_START.listen(Key.of(MOD_ID),this::afterGameStart);
+		CommonEvents.AFTER_GAME_START.listen(Key.of(MOD_ID), this::afterGameStart);
 		LOGGER.info("ExampleMod initialized.");
 	}
 
