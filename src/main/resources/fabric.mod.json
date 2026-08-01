@@ -17,6 +17,9 @@
 	"entrypoints": {
 		"main": [
 			"turniplabs.examplemod.ExampleMod"
+		],
+		"client": [
+			"turniplabs.examplemod.ExampleClient"
 		]
 	},
 	"mixins": [
