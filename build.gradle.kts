@@ -29,7 +29,7 @@ repositories {
         patternLayout { artifact("v1/[organisation]/[revision]/[module].jar") }
         metadataSources { artifact() }
     }
-	maven("https://maven.danygames2014.net/signalum/releases") { name = "SignalumMavenMirror1" }
+	maven("https://maven.danygames2014.net/signalum") { name = "SignalumMavenMirror1" }
 	ivy("https://github.com/Turnip-Labs") {
 		patternLayout {
 			artifact("/fabric-loader/releases/download/[revision]/fabric-loader-[revision].jar")
