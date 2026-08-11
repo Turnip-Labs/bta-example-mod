@@ -21,15 +21,15 @@ loom {
 }
 repositories {
     mavenCentral()
+	ivy("https://piston-data.mojang.com") {
+        patternLayout { artifact("v1/[organisation]/[revision]/[module].jar") }
+        metadataSources { artifact() }
+    }
     maven("https://maven.fabricmc.net/") { name = "Fabric" }
 	maven("https://maven.danygames2014.net/signalum") { name = "SignalumMavenMirror1" }
     maven("https://maven.thesignalumproject.net/infrastructure") { name = "SignalumMavenInfrastructure" }
     maven("https://maven.thesignalumproject.net/releases") { name = "SignalumMavenReleases" }
 	maven("https://maven.thesignalumproject.net/nightly") { name = "SignalumMavenNightly" }
-    ivy("https://piston-data.mojang.com") {
-        patternLayout { artifact("v1/[organisation]/[revision]/[module].jar") }
-        metadataSources { artifact() }
-    }
 }
 dependencies {
     minecraft("::${libs.versions.bta.get()}")
